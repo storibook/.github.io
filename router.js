@@ -9,17 +9,17 @@ const listen = () => {
     } else {
       //change html
       getPage(hash).then((text) =>{
-        alert("returned")
         alert(text)
-        document.getElementsByClassName("plaque").innerHTML = text;
+        current = document.getElementsByClassName("plaque")
+        for (const s of current) {
+            alert(s.innerHTML)
+          }
       })
     }
   }
 
   const getPage = async (hash) => {
-    alert("in fn 1")
     const page = await fetch("pages/second.html").then((response) => response.text())
     alert("in fn 2")
-    alert(page)
     return page
   }
