@@ -39,10 +39,11 @@ hr {
 
 .plaque {
   padding: 18px;
-  background-color: rgba(255, 255, 255, .7);
-  width: 490px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, 1) 35%);
+  background-attachment: local;
+  width: 430px;
   max-width: 83vw; /* Resizes if screen is small */
-  height: 640px;
+  height: 600px;
   display: block;
   border-color: black;
   border-style: solid;
@@ -72,21 +73,22 @@ hr {
   font-family: "FuturaMed";
   font-variant: small-caps;
   text-align: justify;
-  font-size: 33px;
+  font-size: 34px;
   margin: 10px;
 }
 
 .paragraph{
   font-family: "Palatino";
   text-align: justify;
-  font-size: 24px;
+  hyphens: auto;
+  font-size: 21px;
   margin: 10px;
 }
 
 .info{
   font-family: "FuturaNorm";
   text-align: justify;
-  font-size: 17px;
+  font-size: 14px;
   margin: 10px;
 }
 
