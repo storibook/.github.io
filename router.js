@@ -4,13 +4,13 @@ const listen = () => {
   
   const route = () => {
     var hash = window.location.hash.slice(1)
-    if (hash == "") {
+    if (hash == "") { /*
         getPage("home").then((text) =>{
             alert(text)
             current = document.getElementsByClassName("story")[0]
             alert(current.innerHTML)
             current.innerHTML = text
-          })
+          }) */
     } else {
       //change html
       getPage(hash).then((text) =>{
