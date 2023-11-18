@@ -10,11 +10,9 @@ const listen = () => {
       //change html
       getPage(hash).then((text) =>{
         alert(text)
-        current = document.getElementsByClassName("plaque")
-        for (const s of current) {
-            alert(s.innerHTML)
-            s.innerHTML = text
-          }
+        current = document.getElementsByClassName("plaque")[0]
+        alert(current.innerHTML)
+        current.innerHTML = text
       })
     }
   }
