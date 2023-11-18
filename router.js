@@ -23,7 +23,7 @@ const listen = () => {
   }
 
   const getPage = async (hash) => {
-    location = "pages/" + hash
+    location = "pages/" + hash + ".html"
     const page = await fetch(location).then((response) => response.text())
     return page
   }
