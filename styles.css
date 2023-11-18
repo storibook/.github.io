@@ -1,0 +1,118 @@
+:root {
+  --link-color: rgb(0, 0, 0);
+  --link-color-2: rgb(58, 23, 118);
+}
+
+html {
+  text-rendering: optimizeLegibility;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  -webkit-text-size-adjust: 100%; /*For mobile Safari inconsistency*/
+  background-image: url("media/whisper.png");
+  background-size: 700px;
+  background-position: 400px 200px;
+  background-repeat: no-repeat;
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+
+@font-face {
+  font-family: "FuturaMed";
+  src: url("media/FuturaStd-Medium.otf");
+}
+
+@font-face {
+  font-family: "FuturaNorm";
+  src: url("media/FuturaStd-Book.otf");
+}
+
+@font-face {
+  font-family: "Palatino";
+  src: url("media/PalatinoLTStd-Roman.otf");
+}
+
+hr {
+  border-top: 3px solid #000000;
+}
+
+.plaque {
+  padding: 18px;
+  background-color: rgba(255, 255, 255, .7);
+  width: 490px;
+  max-width: 83vw; /* Resizes if screen is small */
+  height: 640px;
+  display: block;
+  border-color: black;
+  border-style: solid;
+  border-width: 5px 5px 20px 20px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.name{
+  font-family: "FuturaMed";
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 50px;
+  letter-spacing: 2px;
+  margin: 3px;
+}
+
+.title{
+  font-family: "FuturaNorm";
+  text-align: center;
+  font-size: 26px;
+  margin: 15px;
+}
+
+.jobs{
+  font-family: "FuturaMed";
+  font-variant: small-caps;
+  text-align: justify;
+  font-size: 33px;
+  margin: 10px;
+}
+
+.invitation{
+  font-family: "Palatino";
+  text-align: justify;
+  font-size: 24px;
+  margin: 10px;
+}
+
+.paragraph{
+  font-family: "FuturaNorm";
+  text-align: justify;
+  font-size: 17px;
+  margin: 10px;
+}
+
+.contact{
+  font-family: "FuturaMed";
+  font-variant: small-caps;
+  text-align: justify;
+  font-size: 30px;
+}
+
+a:link {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--link-color-2);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-color-2);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--link-color-2);
+  text-decoration: underline;
+}
