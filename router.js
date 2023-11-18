@@ -11,7 +11,7 @@ const listen = () => {
         alert(text)
         current = document.getElementsByClassName("story")[0]
         alert(current.innerHTML)
-        current.innerHTML = text
+        //current.innerHTML = text
       })
     }
   }
