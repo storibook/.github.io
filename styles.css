@@ -8,9 +8,9 @@ html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
   -webkit-text-size-adjust: 100%; /*For mobile Safari inconsistency*/
-  background-image: url("media/whisper.png");
+  background-image: url("images/whisper.png");
   background-size: 700px;
-  background-position: 400px 200px;
+  background-position: 350px 200px;
   background-repeat: no-repeat;
 }
 
@@ -20,17 +20,17 @@ html::-webkit-scrollbar {
 
 @font-face {
   font-family: "FuturaMed";
-  src: url("media/FuturaStd-Medium.otf");
+  src: url("fonts/FuturaStd-Medium.otf");
 }
 
 @font-face {
   font-family: "FuturaNorm";
-  src: url("media/FuturaStd-Book.otf");
+  src: url("fonts/FuturaStd-Book.otf");
 }
 
 @font-face {
   font-family: "Palatino";
-  src: url("media/PalatinoLTStd-Roman.otf");
+  src: url("fonts/PalatinoLTStd-Roman.otf");
 }
 
 hr {
@@ -41,9 +41,9 @@ hr {
   padding: 18px;
   background: linear-gradient(180deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, 1) 35%);
   background-attachment: local;
-  width: 430px;
+  width: 410px;
   max-width: 83vw; /* Resizes if screen is small */
-  height: 600px;
+  height: 580px;
   display: block;
   border-color: black;
   border-style: solid;
