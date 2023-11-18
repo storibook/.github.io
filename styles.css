@@ -52,23 +52,23 @@ hr {
   scrollbar-width: none;  /* Firefox */
 }
 
-.name{
+.title{
   font-family: "FuturaMed";
   font-variant: small-caps;
   text-align: center;
   font-size: 50px;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   margin: 3px;
 }
 
-.title{
+.sub{
   font-family: "FuturaNorm";
   text-align: center;
-  font-size: 26px;
-  margin: 15px;
+  font-size: 23px;
+  margin: 10px;
 }
 
-.jobs{
+.story{
   font-family: "FuturaMed";
   font-variant: small-caps;
   text-align: justify;
@@ -76,14 +76,14 @@ hr {
   margin: 10px;
 }
 
-.invitation{
+.paragraph{
   font-family: "Palatino";
   text-align: justify;
   font-size: 24px;
   margin: 10px;
 }
 
-.paragraph{
+.info{
   font-family: "FuturaNorm";
   text-align: justify;
   font-size: 17px;
