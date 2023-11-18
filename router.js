@@ -9,6 +9,7 @@ const listen = () => {
     } else {
       //change html
       const text = getPage(hash)
+      alert(text)
       document.getElementsByClassName("plaque").innerHTML = text;
     }
   }
@@ -17,5 +18,6 @@ const listen = () => {
     alert("in fn 1")
     const page = await fetch("pages/second.html")
     alert("in fn 2")
+    alert(page)
     return page
   }
