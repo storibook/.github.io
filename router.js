@@ -13,6 +13,7 @@ const listen = () => {
         current = document.getElementsByClassName("plaque")
         for (const s of current) {
             alert(s.innerHTML)
+            s.innerHTML = text
           }
       })
     }
