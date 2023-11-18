@@ -8,9 +8,11 @@ const listen = () => {
       //route to index
     } else {
       //change html
-      const text = getPage(hash)
-      alert(text)
-      document.getElementsByClassName("plaque").innerHTML = text;
+      getPage(hash).then((text) =>{
+        alert("returned")
+        alert(text)
+        document.getElementsByClassName("plaque").innerHTML = text;
+      })
     }
   }
 
