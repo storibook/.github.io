@@ -16,7 +16,7 @@ const listen = () => {
 
   const getPage = async (hash) => {
     alert("in fn 1")
-    const page = await fetch("pages/second.html")
+    const page = await fetch("pages/second.html").then((response) => response.text())
     alert("in fn 2")
     alert(page)
     return page
