@@ -37,6 +37,15 @@ hr {
   border-top: 3px solid #000000;
 }
 
+.box{
+  background-attachment: local;
+  padding: 8px;
+  width: 500px;
+  height: 650px;
+  display: block;
+
+}
+
 .plaque {
   padding: 18px;
   background: linear-gradient(180deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, 1) 35%);
