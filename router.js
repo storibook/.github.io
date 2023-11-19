@@ -10,7 +10,7 @@ const listen = () => {
       //change html
       getPage(hash).then((text) =>{
         alert(text)
-        current = document.getElementsByClassName("plaque")[0]
+        current = document.getElementsByClassName("story")[0]
         alert(current.innerHTML)
         current.innerHTML = text
       })
