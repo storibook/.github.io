@@ -18,6 +18,7 @@ const listen = () => {
   }
 
   const getPage = async (hash) => {
-    const page = await fetch("pages/second.txt").then((response) => response.text())
+    file = "stories/second.txt"
+    const page = await fetch(file).then((response) => response.text())
     return page
   }
