@@ -28,7 +28,7 @@ const listen = () => {
 
   const getPage = async (file) => {
     const page = await fetch(file)
-    text = page.text()
+    //text = page.text()
     //return [text, page.ok]
     return page
   }
