@@ -132,3 +132,10 @@ a:active {
   font-size: 21px;
   margin: 10px;
 }
+
+.square{
+  font-family: "FuturaMed";
+  text-align: center;
+  font-size: 50px;
+  margin: 3px;
+}
