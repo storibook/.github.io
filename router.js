@@ -14,14 +14,13 @@ const listen = () => {
       if (ok){
         story.innerHTML = text
       } else{
-        story.innerHTML = `<p class="stitle"> Can't find page </p>`
+        story.innerHTML = `<p class="stitle"> can't find page </p>`
       }
     })
   }
 
   const getPage = async (hash) => {
-    file = "pages/" + hash + ".html"
+    file = "stories/" + hash + ".html"
     const page = await fetch(file)
-    text = page.text()
-    return [text, page.ok]
+    return [page.text(), page.ok]
   }
