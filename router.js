@@ -10,7 +10,8 @@ const listen = () => {
       hash = "featured"
     }
 
-    getPage(hash).then((text, ok) =>{
+    getPage(hash).then((data) =>{
+      [text, ok] = data
       if (ok){
         story.innerHTML = text
       } else{
