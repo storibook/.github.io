@@ -1,9 +1,11 @@
 html {
   text-rendering: optimizeLegibility;
-
+/*
+  background-color: rgb(252, 255, 83);
+  */
   background-image: url("images/whisper.png");
-  background-size: 700px;
-  background-position: 350px 150px;
+  background-size: 650px;
+  background-position: 310px 130px;
   background-repeat: no-repeat;
 
 /*
@@ -105,7 +107,7 @@ a:active {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 
-  background: linear-gradient(180deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, 1) 35%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, 1) 20%);
   background-attachment: local;
 }
 
