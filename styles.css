@@ -76,6 +76,21 @@ a:active {
   src: url("fonts/PalatinoLTStd-Roman.otf");
 }
 
+@font-face {
+  font-family: "Bembo";
+  src: url("fonts/BemboStd.otf");
+}
+
+@font-face {
+  font-family: "BemboSemi";
+  src: url("fonts/BemboStd-Semibold.otf");
+}
+
+@font-face {
+  font-family: "Baskerville";
+  src: url("fonts/NewBaskervilleStd-Roman.otf");
+}
+
 .box {
   padding: 18px;
   width: 410px;
@@ -95,10 +110,11 @@ a:active {
 .title{
   font-family: "FuturaMed";
   font-variant: small-caps;
-  text-align: center;
-  font-size: 50px;
+  text-align: left;
+  font-size: 45px;
   letter-spacing: 5px;
-  margin: 3px;
+  margin: -10px;
+  padding: 0px 0px 15px 20px;
 }
 
 .sub{
@@ -106,7 +122,7 @@ a:active {
   text-align: center;
   font-size: 23px;
   letter-spacing: 1px;
-  margin: 10px;
+  margin: 3px;
 }
 
 .stitle{
@@ -116,6 +132,7 @@ a:active {
   font-size: 34px;
   letter-spacing: 1px;
   margin: 10px;
+  padding: 10px 0px 0px 0px;
 }
 
 .info{
@@ -130,7 +147,9 @@ a:active {
   text-align: justify;
   hyphens: auto;
   font-size: 21px;
+  line-height: 1.35;
   margin: 10px;
+  padding: 10px 0px 0px 0px;
 }
 
 .square{
