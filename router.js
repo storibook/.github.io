@@ -21,10 +21,8 @@ const listen = () => {
 
   const getPage = async (file) => {
     const page = await fetch(file)
-    text = page.text()
-    if (page.ok){
-      return text
-    } else{
+    if (! page.ok){
       return `<p class="stitle"> can't find page </p>`
     }
+    return page.text()
   }
