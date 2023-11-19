@@ -4,9 +4,8 @@ const listen = () => {
   
   const route = () => {
     const path = getPath()
-    var story = document.getElementsByClassName("story")[0]
-
     getPage(path).then((page) => {
+      var story = document.getElementsByClassName("story")[0]
       story.innerHTML = page
     })
   }
