@@ -14,7 +14,7 @@ const listen = () => {
       if (ok){
         story.innerHTML = text
       } else{
-        story.innerHTML = "Cant find page!"
+        story.innerHTML = `<p class="stitle"> Can't find page </p>`
       }
     })
   }
@@ -22,6 +22,6 @@ const listen = () => {
   const getPage = async (hash) => {
     file = "pages/" + hash + ".html"
     const page = await fetch(file)
-    html = page.text()
-    return [html, page.ok]
+    text = page.text()
+    return [text, page.ok]
   }
