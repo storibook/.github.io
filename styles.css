@@ -78,19 +78,11 @@ hr {
   margin: 10px;
 }
 
-.story{
+.stitle{
   font-family: "FuturaMed";
   font-variant: small-caps;
   text-align: justify;
   font-size: 34px;
-  margin: 10px;
-}
-
-.paragraph{
-  font-family: "Palatino";
-  text-align: justify;
-  hyphens: auto;
-  font-size: 21px;
   margin: 10px;
 }
 
@@ -101,11 +93,12 @@ hr {
   margin: 10px;
 }
 
-.contact{
-  font-family: "FuturaMed";
-  font-variant: small-caps;
+.paragraph{
+  font-family: "Palatino";
   text-align: justify;
-  font-size: 30px;
+  hyphens: auto;
+  font-size: 21px;
+  margin: 10px;
 }
 
 a:link {
