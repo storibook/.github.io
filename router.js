@@ -4,21 +4,20 @@ const listen = () => {
   
   const route = () => {
     var hash = window.location.hash.slice(1)
-    if (hash == "") { 
+    if (hash == "") {
+      //route to index
     } else {
       //change html
       getPage(hash).then((text) =>{
         alert(text)
-        current = document.getElementsByClassName("story")[0]
+        current = document.getElementsByClassName("plaque")[0]
         alert(current.innerHTML)
-        //current.innerHTML = text
+        current.innerHTML = text
       })
     }
   }
 
   const getPage = async (hash) => {
-    location = "pages/" + hash + ".html"
-    const page = await fetch("stories/second.txt").then((response) => response.text())
-    alert("got page")
+    const page = await fetch("pages/second.html").then((response) => response.text())
     return page
   }
