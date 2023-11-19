@@ -142,7 +142,7 @@ a:active {
   text-align: left;
   font-size: 16px;
   margin: 10px;
-  padding: 0px 0px 16px 0px;
+  padding: 0px 0px 17px 0px;
 }
 
 .paragraph{
@@ -151,9 +151,9 @@ a:active {
   hyphens: auto;
   -webkit-hyphens: auto;
   font-size: 21px;
-  line-height: 1.35;
+  line-height: 1.36;
   margin: 10px;
-  padding: 0px 0px 3px 0px;
+  padding: 0px 0px 4px 0px;
 }
 
 .square{
