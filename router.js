@@ -22,5 +22,6 @@ const listen = () => {
   const getPage = async (hash) => {
     file = "stories/" + hash + ".html"
     const page = await fetch(file)
-    return [page.text(), page.ok]
+    text = page.text()
+    return [text, page.ok]
   }
