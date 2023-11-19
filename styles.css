@@ -1,22 +1,51 @@
-:root {
-  --link-color: rgb(0, 0, 0);
-  --link-color-2: rgb(58, 23, 118);
-}
-
 html {
   text-rendering: optimizeLegibility;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-  -webkit-text-size-adjust: 100%; /*For mobile Safari inconsistency*/
 
   background-image: url("images/whisper.png");
   background-size: 700px;
   background-position: 350px 200px;
   background-repeat: no-repeat;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  -webkit-text-size-adjust: 100%; /*For mobile Safari inconsistency*/
 }
 
 html::-webkit-scrollbar {
   display: none; /* Chrome, Safari and Opera */
+}
+
+img { /*For floating images embedded in text*/
+  vertical-align: middle;
+  float: inline-start;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  padding: 10px 0 6px 0;
+}
+
+hr {
+  border-top: 3px solid #000000;
+}
+
+a:link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(58, 23, 118);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(58, 23, 118);
+  text-decoration: underline;
+}
+
+a:active {
+  color: rgb(58, 23, 118);
+  text-decoration: underline;
 }
 
 @font-face {
@@ -34,37 +63,20 @@ html::-webkit-scrollbar {
   src: url("fonts/PalatinoLTStd-Roman.otf");
 }
 
-hr {
-  border-top: 3px solid #000000;
-}
-
-img {
-  /*For floating images embedded in text*/
-  vertical-align: middle;
-  float: inline-start;
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-  padding: 10px 0 6px 0;
-  position: static;
-}
-
 .plaque {
   padding: 18px;
   width: 410px;
-  max-width: 83vw; /* Resizes if screen is small */
   height: 580px;
-
-  background: linear-gradient(180deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, 1) 35%);
-  background-attachment: local;
 
   border-color: black;
   border-style: solid;
   border-width: 5px 5px 20px 20px;
-
   overflow-y: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+
+  background: linear-gradient(180deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, 1) 35%);
+  background-attachment: local;
 }
 
 .title{
@@ -80,6 +92,7 @@ img {
   font-family: "FuturaNorm";
   text-align: center;
   font-size: 23px;
+  letter-spacing: 1px;
   margin: 10px;
 }
 
@@ -88,6 +101,7 @@ img {
   font-variant: small-caps;
   text-align: justify;
   font-size: 34px;
+  letter-spacing: 1px;
   margin: 10px;
 }
 
@@ -104,24 +118,4 @@ img {
   hyphens: auto;
   font-size: 21px;
   margin: 10px;
-}
-
-a:link {
-  color: var(--link-color);
-  text-decoration: none;
-}
-
-a:visited {
-  color: var(--link-color-2);
-  text-decoration: none;
-}
-
-a:hover {
-  color: var(--link-color-2);
-  text-decoration: underline;
-}
-
-a:active {
-  color: var(--link-color-2);
-  text-decoration: underline;
 }
