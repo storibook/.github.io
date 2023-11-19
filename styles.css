@@ -107,7 +107,7 @@ a:active {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 
-  background: linear-gradient(180deg, rgba(255, 255, 255, .25), rgba(255, 255, 255, 1) 20%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, 1) 20%);
   background-attachment: local;
 }
 
@@ -161,7 +161,7 @@ a:active {
 .square{
   font-family: "FuturaMed";
   text-align: center;
-  font-size: 50px;
+  font-size: 40px;
   margin: 3px;
   padding: 5px 0px 0px 0px;
 }
