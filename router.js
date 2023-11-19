@@ -18,6 +18,6 @@ const listen = () => {
   }
 
   const getPage = async (hash) => {
-    const page = await fetch("pages/second.html").then((response) => response.text())
+    const page = await fetch("pages/second").then((response) => response.text())
     return page
   }
