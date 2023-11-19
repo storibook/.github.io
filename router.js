@@ -3,15 +3,11 @@ const listen = () => {
   }
   
   const route = () => {
-    var hash = window.location.hash.slice(1)
-    if (hash == "") {
-      hash = "featured"
-    }
+    const path = getPath()
+    var story = document.getElementsByClassName("story")[0]
 
-    getPage(hash).then((data) =>{
+    getPage(path).then((data) =>{
       [text, ok] = data
-      var story = document.getElementsByClassName("story")[0]
-
       if (ok){
         story.innerHTML = text
       } else{
@@ -20,8 +16,16 @@ const listen = () => {
     })
   }
 
-  const getPage = async (hash) => {
-    file = "stories/" + hash + ".html"
+  const getPath = () => {
+    var hash = window.location.hash.slice(1)
+    if (hash == "") {
+      hash = "featured"
+    }
+    return "stories/" + hash + ".html"
+  }
+
+  const getPage = async (file) => {
     const page = await fetch(file)
-    return [page.text(), page.ok]
+    text = page.text()
+    return [text, page.ok]
   }
