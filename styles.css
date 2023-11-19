@@ -3,8 +3,21 @@ html {
 
   background-image: url("images/whisper.png");
   background-size: 700px;
-  background-position: 350px 200px;
+  background-position: 350px 150px;
   background-repeat: no-repeat;
+
+/*
+  background: repeating-linear-gradient(
+    45deg,
+    #000000,
+    #000000 1px,
+    #ffffff 1px,
+    #ffffff 11px
+  );
+  height: 730px;
+  background-position-x: 20px;
+  background-repeat: no-repeat;
+  */
 
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -63,7 +76,7 @@ a:active {
   src: url("fonts/PalatinoLTStd-Roman.otf");
 }
 
-.plaque {
+.box {
   padding: 18px;
   width: 410px;
   height: 580px;
