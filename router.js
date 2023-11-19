@@ -4,42 +4,24 @@ const listen = () => {
   
   const route = () => {
     var hash = window.location.hash.slice(1)
+    var story = document.getElementsByClassName("story")[0]
+
     if (hash == "") {
       hash = "featured"
     }
-    getPage(hash).then((text) =>{
-      current = document.getElementsByClassName("story")[0]
-      current.innerHTML = text
+
+    getPage(hash).then((text, ok) =>{
+      if (ok){
+        story.innerHTML = text
+      } else{
+        story.innerHTML = "Cant find page!"
+      }
     })
   }
 
   const getPage = async (hash) => {
     file = "pages/" + hash + ".html"
     const page = await fetch(file)
-    if (! page.ok){
-      alert("got bad response")
-    }
     html = page.text()
-    return html
-  }
-
-  const getPage2 = async (hash) => {
-    file = "pages/" + hash + ".html"
-    getText(file).then((page, err) =>{
-      if (err){
-        alert("got bad resp")
-      }
-      return page
-    })
-  }
-
-  const getText = async (file) => {
-    fetch(file).then(async (data) => {
-      page = data.text()
-        if (data.ok) {
-          return [page, false]
-        } else{
-            return[page, true]
-        }
-    })
+    return [html, page.ok]
   }
