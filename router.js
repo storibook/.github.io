@@ -13,7 +13,8 @@ const listen = () => {
       } else{
         story.innerHTML = `<p class="stitle"> can't find page </p>`
       }*/
-      story.innerHTML = data
+      text = data.text()
+      story.innerHTML = text
     })
   }
 
@@ -29,5 +30,5 @@ const listen = () => {
     const page = await fetch(file)
     text = page.text()
     //return [text, page.ok]
-    return text
+    return page
   }
