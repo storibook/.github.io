@@ -4,14 +4,14 @@ const listen = () => {
   
   const route = () => {
     var hash = window.location.hash.slice(1)
-    var story = document.getElementsByClassName("story")[0]
-
     if (hash == "") {
       hash = "featured"
     }
 
     getPage(hash).then((data) =>{
       [text, ok] = data
+      var story = document.getElementsByClassName("story")[0]
+
       if (ok){
         story.innerHTML = text
       } else{
@@ -23,6 +23,5 @@ const listen = () => {
   const getPage = async (hash) => {
     file = "stories/" + hash + ".html"
     const page = await fetch(file)
-    text = page.text()
-    return [text, page.ok]
+    return [page.text(), page.ok]
   }
