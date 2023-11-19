@@ -7,7 +7,7 @@ const listen = () => {
     var story = document.getElementsByClassName("story")[0]
 
     getPage(path).then((page) => {
-      story.innerHTML = text
+      story.innerHTML = page
     })
   }
 
