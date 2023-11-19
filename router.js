@@ -16,6 +16,9 @@ const listen = () => {
   const getPage = async (hash) => {
     file = "pages/" + hash + ".html"
     const page = await fetch(file)
+    if (! page.ok){
+      alert("got bad response")
+    }
     html = page.text()
     return html
   }
