@@ -94,7 +94,10 @@ a:active {
 .box {
   padding: 18px;
   width: 410px;
+  max-width: 80vw; /* Resizes if screen is small */
   height: 640px;
+  max-height: 80vh;
+
 
   border-color: black;
   border-style: solid;
