@@ -5,26 +5,37 @@ const listen = () => {
   const route = () => {
     var hash = window.location.hash.slice(1)
     if (hash == "") {
-      //route to index
-      getPage("featured").then((text) =>{
-        alert(text)
-        current = document.getElementsByClassName("story")[0]
-        alert(current.innerHTML)
-        current.innerHTML = text
-      })
-    } else {
-      //change html
-      getPage(hash).then((text) =>{
-        alert(text)
-        current = document.getElementsByClassName("story")[0]
-        alert(current.innerHTML)
-        current.innerHTML = text
-      })
+      hash = "featured"
     }
+    getPage2(hash).then((text) =>{
+      current = document.getElementsByClassName("story")[0]
+      current.innerHTML = text
+    })
   }
 
   const getPage = async (hash) => {
     file = "pages/" + hash + ".html"
     const page = await fetch(file).then((response) => response.text())
     return page
+  }
+
+  const getPage2 = async (hash) => {
+    file = "pages/" + hash + ".html"
+    getText(file).then((page, err) =>{
+      if (err){
+        alert("got bad resp")
+      }
+      return page
+    })
+  }
+
+  const getText = async (file) => {
+    fetch(file).then(async (data) => {
+      page = data.text()
+        if (data.ok) {
+          return [page, false]
+        } else{
+            return[page, true]
+        }
+    })
   }
