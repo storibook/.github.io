@@ -7,7 +7,7 @@ const listen = () => {
     if (hash == "") {
       hash = "featured"
     }
-    getPage2(hash).then((text) =>{
+    getPage(hash).then((text) =>{
       current = document.getElementsByClassName("story")[0]
       current.innerHTML = text
     })
@@ -15,8 +15,9 @@ const listen = () => {
 
   const getPage = async (hash) => {
     file = "pages/" + hash + ".html"
-    const page = await fetch(file).then((response) => response.text())
-    return page
+    const page = await fetch(file)
+    html = page.text()
+    return html
   }
 
   const getPage2 = async (hash) => {
