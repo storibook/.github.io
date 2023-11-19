@@ -1,25 +1,10 @@
 html {
   text-rendering: optimizeLegibility;
-/*
-  background-color: rgb(252, 255, 83);
-  */
-  background-image: url("images/whisper.png");
-  background-size: 650px;
-  background-position: 310px 130px;
-  background-repeat: no-repeat;
 
-/*
-  background: repeating-linear-gradient(
-    45deg,
-    #000000,
-    #000000 1px,
-    #ffffff 1px,
-    #ffffff 11px
-  );
-  height: 730px;
-  background-position-x: 20px;
+  background-image: url("images/whisper.png");
+  background-size: 570px;
+  background-position: 320px 20vh;
   background-repeat: no-repeat;
-  */
 
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -78,21 +63,6 @@ a:active {
   src: url("fonts/PalatinoLTStd-Roman.otf");
 }
 
-@font-face {
-  font-family: "Bembo";
-  src: url("fonts/BemboStd.otf");
-}
-
-@font-face {
-  font-family: "BemboSemi";
-  src: url("fonts/BemboStd-Semibold.otf");
-}
-
-@font-face {
-  font-family: "Baskerville";
-  src: url("fonts/NewBaskervilleStd-Roman.otf");
-}
-
 .box {
   padding: 18px;
   width: 410px;
@@ -107,7 +77,7 @@ a:active {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 
-  background: linear-gradient(180deg, rgba(255, 255, 255, .6), rgba(255, 255, 255, 1) 20%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, 1) 20%);
   background-attachment: local;
 }
 
