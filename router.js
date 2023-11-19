@@ -13,7 +13,6 @@ const listen = () => {
       } else{
         story.innerHTML = `<p class="stitle"> can't find page </p>`
       }
-      //story.innerHTML = data
     })
   }
 
@@ -26,7 +25,11 @@ const listen = () => {
   }
 
   const getPage = async (file) => {
-    const page = await fetch(file)
-    text = page.text()
-    return [Promise.resolve(text), page.ok]
+    //const page = await fetch(file)
+    //text = page.text()
+    //return [text, page.ok]
+    fetch(file).then((page) => {
+      text = page.text()
+      return [text, page.ok]
+    })
   }
