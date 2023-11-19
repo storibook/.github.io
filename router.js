@@ -6,14 +6,7 @@ const listen = () => {
     const path = getPath()
     var story = document.getElementsByClassName("story")[0]
 
-    getPage(path).then((data) => {/*
-      //[text, ok] = data
-      if (data.ok){
-        story.innerHTML = data.text()
-      } else{
-        story.innerHTML = `<p class="stitle"> can't find page </p>`
-      }*/
-      text = data.text()
+    getPage(path).then((page) => {
       story.innerHTML = text
     })
   }
@@ -28,7 +21,10 @@ const listen = () => {
 
   const getPage = async (file) => {
     const page = await fetch(file)
-    //text = page.text()
-    //return [text, page.ok]
-    return page
+    text = page.text()
+    if (page.ok){
+      return text
+    } else{
+      return `<p class="stitle"> can't find page </p>`
+    }
   }
