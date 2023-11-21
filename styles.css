@@ -135,3 +135,13 @@ a:active {
   margin: 3px;
   padding: 5px 0px 0px 0px;
 }
+
+.error{
+  font-family: "FuturaMed";
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 1px;
+  margin: 5px;
+  padding: 0px 20px 0px 5px;
+}
