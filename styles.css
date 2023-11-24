@@ -1,10 +1,25 @@
 html {
   text-rendering: optimizeLegibility;
 
-  background-image: url("images/whisper.png");
-  background-size: 570px;
-  background-position: 320px 20vh;
+  /*
+  background: repeating-linear-gradient(
+    45deg,
+    #000000,
+    #000000 1px,
+    #ffffff 1px,
+    #ffffff 11px
+  );
+  height: 730px;
+  background-position-x: 20px;
   background-repeat: no-repeat;
+  */
+
+  
+  background-image: url("images/whisper.png");
+  background-size: 530px;
+  background-position: 450px 20vh;
+  background-repeat: no-repeat;
+  
 
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
@@ -89,7 +104,7 @@ a:active {
   padding: 18px;
   width: 410px;
   max-width: 77vw; /* Resizes if screen is small */
-  height: 640px;
+  height: 630px;
   max-height: 77vh;
 
   border-color: black;
@@ -99,7 +114,7 @@ a:active {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 
-  background: linear-gradient(180deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, 1) 20%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, .4), rgba(255, 255, 255, 1) 30%);
   background-attachment: local;
 }
 
