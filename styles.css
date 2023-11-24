@@ -28,6 +28,18 @@ hr {
   border-top: 3px solid #000000;
 }
 
+em {
+  font-family: 'PalItalic';
+  font-weight: normal;
+  font-style: normal;
+}
+
+strong {
+  font-family: 'PalBold';
+  font-weight: normal;
+  font-style: normal;
+}
+
 a:link {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -61,6 +73,16 @@ a:active {
 @font-face {
   font-family: "Palatino";
   src: url("fonts/PalatinoLTStd-Roman.otf");
+}
+
+@font-face {
+  font-family: "PalItalic";
+  src: url("fonts/PalatinoLTStd-Italic.otf");
+}
+
+@font-face {
+  font-family: "PalBold";
+  src: url("fonts/PalatinoLTStd-Bold.otf");
 }
 
 .box {
@@ -119,6 +141,8 @@ a:active {
 
 .paragraph{
   font-family: "Palatino";
+  font-weight: normal;
+  font-style: normal;
   text-align: justify;
   hyphens: auto;
   -webkit-hyphens: auto;
